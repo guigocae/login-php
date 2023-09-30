@@ -9,10 +9,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <?php 
+        session_start();
+        if($_SESSION["logado"] == 's' && isset($_SESSION["logado"])){
+            echo "<div class='logado'>Olá ".$_SESSION['usuario']." !</div>";
+        }
+    ?>
     <h1>Tabuada While</h1>
     <form action="while.php" method="get" class="form">
         <div class="numero">

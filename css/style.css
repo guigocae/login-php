@@ -1,0 +1,53 @@
+:root {
+    --primary: #2C2C54;
+    --secundary: #474787;
+    --terciary: #AAABB8;
+    --quaternary: #ECECEC;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary);
+    background-color: var(--quaternary);
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form {
+    background-color: var(--terciary);
+    border-radius: 10px;
+    padding: 25px;
+    width: 25vw;
+}
+a {
+    color: var(--secundary);
+}
+.nome{
+    margin-block: 32px;
+    position: relative;
+}
+label {
+    position: absolute;
+    top: -20px;
+}
+#nome, #senha {
+    padding: 5px 8px;
+}
+#envio {
+    border: none;
+    color: var(--quaternary);
+    background-color: var(--primary);
+    font-weight: 700;
+    font-size: 1em;
+    padding: 5px 9px;
+    border-radius: 3px;
+    cursor: pointer;
+}
